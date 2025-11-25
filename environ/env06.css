@@ -7,12 +7,16 @@ H1, H2 {font-family:'Franklin Gothic Medium'}
 }
 
 .box {
-  background: lightyellow;
-  border: 2px solid #555;
-  border-radius: .75rem;
-  padding: 1rem;
-  margin: 1rem 0;
+    font-family: 'Schoolbell', cursive;
+    background-color: #fff5b0;
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    width: fit-content;
+    box-shadow: 4px 4px 0 #000;
 }
+
 #cycleBtn {
   padding: 1rem 2rem;
   border: none;
@@ -36,5 +40,51 @@ H1, H2 {font-family:'Franklin Gothic Medium'}
     pointer-events: none; 
     transform: translate(-50%, -50%); 
 }
+
+
+#background-container h1,
+#background-container h2 {
+    font-family: 'Schoolbell', cursive;   
+    color: #2b2b2b;
+    text-align: center;
+    margin: 10px auto;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffe781;            
+    border: 3px solid #000;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px #000;         
+    line-height: 1.4;
+}
+
+#background-container mark {
+    background: none;
+    padding: 0;
+}
+
+#background-container h1:hover,
+#background-container h2:hover {
+    transform: rotate(-2deg) scale(1.03);
+    transition: 0.15s ease-in-out;
+}
+
+#background-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Schoolbell', cursive;
+    color: #2b2b2b;
+    display: inline-block;
+    background-color: #ffe781;
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 4px 4px 0px #000;
+    line-height: 1.4;
+    margin: 10px;
+}
+
 
 

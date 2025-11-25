@@ -1,9 +1,7 @@
 let worldTitle = "Peanuts Yard";
 
-// array of characters (simple list)
 let peanutsGang = ["Snoopy", "Woodstock", "Charlie", "Linus"];
 
-// detailed objects (Snoopy & Woodstock only)
 let snoopy = {
     name: "Snoopy",
     size: "medium",
@@ -21,17 +19,14 @@ let woodstock = {
 
 $(document).ready(function(){
 
-    // title
     $("#title").append(`<h1>${worldTitle}</h1>`);
 
-    // peanuts gang list
     $("#characters").append(`<h2>Peanuts Gang:</h2>`);
     $("#characters").append(`<ul id="gang-list"></ul>`);
     peanutsGang.forEach(name => {
         $("#gang-list").append(`<li>${name}</li>`);
     });
 
-    // detail cards for Snoopy and Woodstock
     $("#detail").append(`<h2>Details:</h2>`);
 
     $("#detail").append(`
@@ -84,13 +79,6 @@ document.getElementById("cycleBtn").addEventListener("click", () => {
     $("#cycleBtn").click(function () {
         $("body").css("background-color", colors[i]);
         i = (i + 1) % colors.length;
-        $("#woodstock1").fadeToggle(600);
-    });
-
-    $("#gang-list li").hover(function () {
-        $(this).css("background", "orange");
-    }, function () {
-        $(this).css("background", "");
     });
 
     $(document).ready(function () {
